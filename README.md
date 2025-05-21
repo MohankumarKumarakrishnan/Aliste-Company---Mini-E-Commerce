@@ -1,12 +1,32 @@
-# React + Vite
+# E-Shop: React E-commerce Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+E-Shop is a simple and responsive React-based e-commerce web application that allows users to browse products, view detailed product information, add items to a shopping cart, and manage the cart quantity. It uses React Context API for state management and interacts with a public fake store API for product data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Browse a grid of products fetched from an API
+- View detailed product information on a separate page
+- Add products to a shopping cart
+- Update item quantities or remove items from the cart
+- Persistent cart state saved in `localStorage`
+- Responsive design using Tailwind CSS
+- Navigation with React Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React with hooks (`useState`, `useEffect`, `useContext`, `useReducer`)
+- React Router DOM for client-side routing
+- Context API for state management
+- Tailwind CSS for styling
+- Fake Store API (https://fakestoreapi.com) for product data
+
+## Project Structure
+
+- `src/components`: Reusable components such as `Navbar`, `ProductCard`, `CartItem`
+- `src/context`: React Context and reducer for cart state management
+- `src/pages`: Page components (`Home`, `ProductDetail`, `Cart`)
+- `src/utils/api.js`: API helper functions to fetch products
+- `src/App.js`: Main app component defining routes and layout
+
